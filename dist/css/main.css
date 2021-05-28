@@ -205,6 +205,8 @@ img {
     display: flex; }
   #main-nav li {
     padding: 1rem 1.5rem; }
+  #main-nav #logo-anchor {
+    border: none; }
   #main-nav a {
     text-decoration: none;
     text-transform: uppercase;
@@ -383,7 +385,11 @@ img {
 #contact-c h1 {
   text-align: center;
   font-size: 4rem;
-  color: white; }
+  color: black; }
+
+#contact #recap {
+  display: flex;
+  align-items: center; }
 
 #main-footer {
   background: #333;
