@@ -246,7 +246,7 @@ img {
 
 #home-b .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(3, 1fr); }
   #home-b .stats li {
     line-height: 2; }
     #home-b .stats li.stats-title {
@@ -298,8 +298,11 @@ img {
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
+  grid-template-areas: "bioimage bio bio" "st1 st2 st3";
   grid-gap: 1.2rem; }
+  #about-a .about-info h4 {
+    font-size: 1.4rem;
+    margin: 1rem; }
 
 #about-a .bio-image {
   grid-area: bioimage; }
@@ -307,22 +310,23 @@ img {
 #about-a .bio {
   grid-area: bio;
   border-left: 3px solid #ffbc00;
-  padding: 0.8rem; }
+  padding: 1rem;
+  font-size: 1.3rem; }
 
-#about-a .award-1 {
-  grid-area: aw1; }
+#about-a .step-1 {
+  grid-area: st1; }
 
-#about-a .award-2 {
-  grid-area: aw2; }
+#about-a .step-2 {
+  grid-area: st2; }
 
-#about-a .award-3 {
-  grid-area: aw3; }
+#about-a .step-3 {
+  grid-area: st3; }
 
-#about-a .award-1 .fas,
-#about-a .award-2 .fas,
-#about-a .award-3 .fas {
+#about-a .step-1 .fas,
+#about-a .step-2 .fas,
+#about-a .step-3 .fas {
   color: #ffbc00;
-  margin: 1rem; }
+  margin: 1rem -0.4rem; }
 
 #about-b h2,
 #about-b h4 {
@@ -447,7 +451,7 @@ img {
   #home-b .stats.div {
     padding: 2rem 0 1rem 0; }
   #about-a .about-info {
-    grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3"; }
+    grid-template-areas: "bioimage" "bio" "st1" "st2" "st3"; }
   #about-c {
     display: none; }
   #contact-a .text-fields {

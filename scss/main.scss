@@ -136,7 +136,7 @@ img {
 	&-b {
 		.stats {
 			display: grid;
-			grid-template-columns: repeat(4, 1fr);
+			grid-template-columns: repeat(3, 1fr);
 
 			li {
 				line-height: 2;
@@ -222,8 +222,12 @@ img {
 			display: grid;
 			grid-template-areas:
 				"bioimage bio bio"
-				"aw1 aw2 aw3";
+				"st1 st2 st3";
 			grid-gap: 1.2rem;
+			h4 {
+				font-size: 1.4rem;
+				margin: 1rem;
+			}
 		}
 
 		.bio-image {
@@ -233,24 +237,25 @@ img {
 		.bio {
 			grid-area: bio;
 			border-left: 3px solid $main-color;
-			padding: 0.8rem;
+			padding: 1rem;
+			font-size: 1.3rem;
 		}
 
-		.award-1 {
-			grid-area: aw1;
+		.step-1 {
+			grid-area: st1;
 		}
-		.award-2 {
-			grid-area: aw2;
+		.step-2 {
+			grid-area: st2;
 		}
-		.award-3 {
-			grid-area: aw3;
+		.step-3 {
+			grid-area: st3;
 		}
 
-		.award-1 .fas,
-		.award-2 .fas,
-		.award-3 .fas {
+		.step-1 .fas,
+		.step-2 .fas,
+		.step-3 .fas {
 			color: $main-color;
-			margin: 1rem;
+			margin: 1rem -0.4rem;
 		}
 	}
 
